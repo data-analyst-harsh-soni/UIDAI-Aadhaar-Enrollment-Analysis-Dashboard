@@ -45,43 +45,38 @@ This Power BI dashboard transforms complex enrollment data into intuitive, actio
 
 ## 🖼️ Dashboard Snapshots
 
+## 🖼️ Dashboard Snapshots
+
 <table>
   <tr>
     <td align="center">
-      <img src="Dashboard/executive_summary.png" width="420"/>
+      <img src="Dashboard/national_aadhaar_executive_summary.png" width="420"/>
       <br/><b>Executive Summary Dashboard</b>
-      <br/><sub>High-level KPIs and metrics</sub>
     </td>
     <td align="center">
-      <img src="Dashboard/enrollment_analysis.png" width="420"/>
+      <img src="Dashboard/national_aadhaar_enrollment_analysis.png" width="420"/>
       <br/><b>Enrollment Analysis</b>
-      <br/><sub>Comprehensive enrollment insights</sub>
     </td>
   </tr>
 
   <tr>
     <td align="center">
-      <img src="Dashboard/statewise_enrollment_pressure.png" width="420"/>
+      <img src="Dashboard/statewise_aadhaar_enrollment_pressure_snapshot.png" width="420"/>
       <br/><b>State-wise Enrollment Pressure</b>
-      <br/><sub>Regional distribution and hotspots</sub>
     </td>
     <td align="center">
-      <img src="Dashboard/population_agewise_analysis.png" width="420"/>
+      <img src="Dashboard/population_agewise_enrollment_analysis.png" width="420"/>
       <br/><b>Population & Age-wise Analysis</b>
-      <br/><sub>Demographic breakdowns and trends</sub>
     </td>
   </tr>
 
   <tr>
     <td align="center" colspan="2">
-      <img src="Dashboard/enrollment_activity_snapshot.png" width="420"/>
+      <img src="Dashboard/aadhaar_enrollment_activity_snapshot.png" width="420"/>
       <br/><b>Enrollment Activity Snapshot</b>
-      <br/><sub>Real-time activity tracking and monitoring</sub>
     </td>
   </tr>
 </table>
-
-
 
 ### 🎬 Live Interactive Dashboard
 
