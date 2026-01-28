@@ -41,39 +41,46 @@ This Power BI dashboard transforms complex enrollment data into intuitive, actio
 
 ### 📸 Dashboard Snapshots
 
-## 🖼️ Dashboard Snapshots
-
-## 🖼️ Dashboard Snapshots
-
-## 🖼️ Dashboard Snapshots
-
 <table>
   <tr>
     <td align="center">
-      <img src="Dashboard/national_aadhaar_executive_summary.png" width="420"/>
-      <br/><b>Executive Summary Dashboard</b>
+      <img src="National Aadhaar Enrollment – Executive Summary.png" alt="Executive Summary" width="400"/>
+      <br/>
+      <b>Executive Summary Dashboard</b>
+      <br/>
+      <sub>High-level KPIs and metrics</sub>
     </td>
     <td align="center">
-      <img src="Dashboard/national_aadhaar_enrollment_analysis.png" width="420"/>
-      <br/><b>Enrollment Analysis</b>
+      <img src="National Aadhaar Enrollment Analysis.png" alt="Main Dashboard" width="400"/>
+      <br/>
+      <b>Enrollment Analysis</b>
+      <br/>
+      <sub>Comprehensive enrollment insights</sub>
     </td>
   </tr>
-
   <tr>
     <td align="center">
-      <img src="Dashboard/statewise_aadhaar_enrollment_pressure_snapshot.png" width="420"/>
-      <br/><b>State-wise Enrollment Pressure</b>
+      <img src="State-wise Aadhaar Enrollment Pressure Snapshot.png" alt="State Analysis" width="400"/>
+      <br/>
+      <b>State-wise Enrollment Pressure</b>
+      <br/>
+      <sub>Regional distribution and hotspots</sub>
     </td>
     <td align="center">
-      <img src="Dashboard/population_agewise_enrollment_analysis.png" width="420"/>
-      <br/><b>Population & Age-wise Analysis</b>
+      <img src="Population & Age-wise Enrollment Analysis.png" alt="Demographics" width="400"/>
+      <br/>
+      <b>Population & Age-wise Analysis</b>
+      <br/>
+      <sub>Demographic breakdowns and trends</sub>
     </td>
   </tr>
-
   <tr>
     <td align="center" colspan="2">
-      <img src="Dashboard/aadhaar_enrollment_activity_snapshot.png" width="420"/>
-      <br/><b>Enrollment Activity Snapshot</b>
+      <img src="Aadhaar Enrollment Activity Snapshot.png" alt="Activity Snapshot" width="400"/>
+      <br/>
+      <b>Enrollment Activity Snapshot</b>
+      <br/>
+      <sub>Real-time activity tracking and monitoring</sub>
     </td>
   </tr>
 </table>
