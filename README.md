@@ -19,6 +19,24 @@
 
 </div>
 
+## 📋 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Dashboard Gallery](#-dashboard-gallery)
+- [Key Features](#-key-features)
+- [Dashboard Components](#-dashboard-components)
+- [Technologies & Tools](#️-technologies--tools)
+- [Getting Started](#-getting-started)
+- [Usage Guide](#-usage-guide)
+- [Data Architecture](#-data-architecture)
+- [Installation](#-installation)
+- [Contributing](#-contributing)
+- [Roadmap](#-roadmap)
+- [License](#-license)
+- [Contact](#-contact)
+
+---
+
 ## 🎯 Project Overview
 
 > **Mission**: To provide stakeholders with real-time, interactive insights into India's Aadhaar enrollment program through data-driven visualizations and analytics.
@@ -43,47 +61,49 @@ This Power BI dashboard transforms complex enrollment data into intuitive, actio
 
 <table>
   <tr>
-    <td align="center">
-      <img src="National Aadhaar Enrollment – Executive Summary.png" alt="Executive Summary" width="400"/>
+    <td align="center" width="50%">
+      <img src="Dashboard/National Aadhaar Enrollment – Executive Summary.png" alt="Executive Summary" width="100%"/>
       <br/>
-      <b>Executive Summary Dashboard</b>
+      <b>📊 Executive Summary Dashboard</b>
       <br/>
       <sub>High-level KPIs and metrics</sub>
     </td>
-    <td align="center">
-      <img src="National Aadhaar Enrollment Analysis.png" alt="Main Dashboard" width="400"/>
+    <td align="center" width="50%">
+      <img src="Dashboard/National Aadhaar Enrollment Analysis.png" alt="Main Dashboard" width="100%"/>
       <br/>
-      <b>Enrollment Analysis</b>
+      <b>📈 Enrollment Analysis</b>
       <br/>
       <sub>Comprehensive enrollment insights</sub>
     </td>
   </tr>
   <tr>
-    <td align="center">
-      <img src="State-wise Aadhaar Enrollment Pressure Snapshot.png" alt="State Analysis" width="400"/>
+    <td align="center" width="50%">
+      <img src="Dashboard/State-wise Aadhaar Enrollment Pressure Snapshot.png" alt="State Analysis" width="100%"/>
       <br/>
-      <b>State-wise Enrollment Pressure</b>
+      <b>🗺️ State-wise Enrollment Pressure</b>
       <br/>
       <sub>Regional distribution and hotspots</sub>
     </td>
-    <td align="center">
-      <img src="Population & Age-wise Enrollment Analysis.png" alt="Demographics" width="400"/>
+    <td align="center" width="50%">
+      <img src="Dashboard/Population & Age-wise Enrollment Analysis.png" alt="Demographics" width="100%"/>
       <br/>
-      <b>Population & Age-wise Analysis</b>
+      <b>👥 Population & Age-wise Analysis</b>
       <br/>
       <sub>Demographic breakdowns and trends</sub>
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2">
-      <img src="Aadhaar Enrollment Activity Snapshot.png" alt="Activity Snapshot" width="400"/>
+      <img src="Dashboard/Aadhaar Enrollment Activity Snapshot.png" alt="Activity Snapshot" width="50%"/>
       <br/>
-      <b>Enrollment Activity Snapshot</b>
+      <b>⚡ Enrollment Activity Snapshot</b>
       <br/>
       <sub>Real-time activity tracking and monitoring</sub>
     </td>
   </tr>
 </table>
+
+---
 
 ### 🎬 Live Interactive Dashboard
 
@@ -105,24 +125,6 @@ This Power BI dashboard transforms complex enrollment data into intuitive, actio
 </details>
 
 </div>
-
----
-
-## 📋 Table of Contents
-
-- [Project Overview](#-project-overview)
-- [Dashboard Gallery](#️-dashboard-gallery)
-- [Key Features](#-key-features)
-- [Dashboard Components](#-dashboard-components)
-- [Technologies & Tools](#️-technologies--tools)
-- [Getting Started](#-getting-started)
-- [Usage Guide](#-usage-guide)
-- [Data Architecture](#-data-architecture)
-- [Installation](#-installation)
-- [Contributing](#-contributing)
-- [Roadmap](#-roadmap)
-- [License](#-license)
-- [Contact](#-contact)
 
 ---
 
@@ -313,7 +315,7 @@ Want to embed this dashboard in your website or application?
   title="National Aadhaar Enrollment Analysis Dashboard" 
   width="1200" 
   height="750" 
-  src="https://app.powerbi.com/view?r=eyJrIjoiOTkxYTVmN2ItNWViOC00ZDY5LWFmYTMtZjU3MjE4ZGJmYzM5IiwidCI6IjRhNzhmOWQwLWFiZGUtNDBjNC1hMDg4LTBiOTk5NTk5M2M0YSJ9&pageName=5e484e6a688e60e79c50" 
+  src="https://app.powerbi.com/view?r=eyJrIjoiOTkxYTVmN2ItNWViOC00ZDY5LWFmYTMtZjU3MjE4ZGJmYzM5IiwidCI6IjRhNzhmOWQwLWFiZGUtNDBjNC1hMDg4LTBiOTg5NTk5M2M0YSJ9&pageName=5e484e6a688e60e79c50" 
   frameborder="0" 
   allowFullScreen="true">
 </iframe>
@@ -384,15 +386,39 @@ State Level → District Level → Block Level → Center Level
 
 ### 📊 Data Flow Diagram
 
-```mermaid
-graph LR
-    A[UIDAI Database] --> B[ETL Process]
-    C[Census Data] --> B
-    D[State Records] --> B
-    B --> E[Data Warehouse]
-    E --> F[Power BI Dataset]
-    F --> G[Dashboard]
-    G --> H[Users]
+```
+┌─────────────────┐
+│  UIDAI Database │
+└────────┬────────┘
+         │
+         ▼
+┌─────────────────┐     ┌──────────────┐
+│  Census Data    │────►│ ETL Process  │
+└─────────────────┘     └──────┬───────┘
+                               │
+┌─────────────────┐            │
+│  State Records  │────────────┘
+└─────────────────┘            │
+                               ▼
+                        ┌──────────────┐
+                        │ Data Warehouse│
+                        └──────┬───────┘
+                               │
+                               ▼
+                        ┌──────────────┐
+                        │ Power BI     │
+                        │ Dataset      │
+                        └──────┬───────┘
+                               │
+                               ▼
+                        ┌──────────────┐
+                        │  Dashboard   │
+                        └──────┬───────┘
+                               │
+                               ▼
+                        ┌──────────────┐
+                        │    Users     │
+                        └──────────────┘
 ```
 
 ### 🗂️ Data Model
@@ -591,13 +617,13 @@ copies or substantial portions of the Software.
 
 ---
 
-## 📞 Contact & Support
+## 📞 Contact
 
 <div align="center">
 
 ### 👨‍💻 Project Maintainer
 
-**Harsh Soni**
+**Harsh Soni**  
 *Data Analyst*
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/harsh-soni)
